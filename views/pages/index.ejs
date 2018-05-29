@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<title>Matt || Griffith</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    #mobile-header {
+        display: none;
+    }
+
+    #name {
+        color: #ffffff;
+    }
+
+    #sub-name {
+        color: #ffffff;
+        letter-spacing: 4.5px;
+    }
+    
+    #more {
+
+    }
+
+    #subtitle {
+        font-family: 'Open Sans', sans-serif;
+        color: #ffffff;
+        letter-spacing: 3.5px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        #mobile-header {
+            display: block;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(0deg, rgba(109, 109, 109, 0.5), rgba(0, 87, 128, 0.479)), url('https://images.unsplash.com/photo-1512134734790-9f5936895aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90f8c90bf7228a974abbbfe2dd3f6193&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb');
+            height: 100vh;
+            width: 100vw;
+            margin: 0px !important;
+        }
+
+        #portfolio {
+            padding-top: 0em !important;
+        }
+
+
+        .w3-main {
+            padding: 0px !important;
+        }
+
+        #mobile-title {
+            display: flex;
+            border-style: solid;
+            border-color: #ffffff;
+            border-spacing: 1px;
+            justify-content: center;
+            margin-top: 5em;
+        }
+
+        #mobile-title-main {
+            font-size: 14vw;
+        }
+
+        #mobile-title2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .down {
+            color: #ffffff;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        /* scroll arrow -----------------------------------------------------------*/
+        body {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .scroll-indicator {
+            color: #ffffff !important;
+            position: absolute;
+            left: 45%;
+            padding-top: 120%;
+            font-size: 30px;
+
+            -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+        }
+
+        #scroller {
+            color: #ffffff !important;
+            font-family: 'Open Sans', sans-serif;
+            position: absolute;
+            left: 42%;
+            /* padding-top: 130%; */
+            bottom: 0;
+            font-size: 20px;
+        }
+
+        @-webkit-keyframes bounce {
+            0% {
+                top: 15%;
+            }
+            50% {
+                top: 20%;
+            }
+            100% {
+                top: 15%;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 15%;
+            }
+            50% {
+                top: 20%;
+            }
+            100% {
+                top: 15%;
+            }
+        }
+
+        .square-box {
+            display: block;
+            margin-top: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20em;
+            height: 9em;
+            overflow: hidden;
+            border-style: solid;
+            border-color: #ffffff;
+        }
+
+        .square-content {
+            text-align: center;
+            color: white;
+        }
+
+        #box-two {
+            background-color: black;
+        }
+
+        #box-two-content {
+
+        }
+
+        #first-name {
+            font-size: 48px;
+            margin: auto;
+            margin-bottom:-0.4em;
+        }
+
+        #last-name {
+            letter-spacing: 4.5px;
+            font-size: 48px;
+            margin: auto;
+        }
+
+        #sub-title {
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        #contact {
+            margin: auto;
+            padding: 1em;
+        }
+
+
+    }
+
+    #bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(0deg, rgba(109, 109, 109, 0.5), rgba(0, 87, 128, 0.479)), url('https://images.unsplash.com/photo-1512134734790-9f5936895aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90f8c90bf7228a974abbbfe2dd3f6193&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb');
+        min-height: 100%;
+    }
+
+    @media only screen and (min-width: 900px) {
+        #portfolio {
+            padding-top: 4em !important;
+        }
+    }
+
+    .ring {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 42%;
+        margin-top: 20em;
+        height: 70px;
+        width: 70px;
+        border: 2px solid;
+        border-radius: 50%;
+        border-color: #ffffff;
+    }
+
+    .fa {
+        color: rgb(0, 162, 255)
+    }
+
+    .threed:hover {
+        box-shadow: 1px 1px #3a3a3a7a,
+        2px 2px #3a3a3a7a,
+        3px 3px #3a3a3a7a;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+
+    }
+
+    .threed {
+        transition: all 0.3s ease;
+    }
+</style>
+
+<body>
+
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <img src="" alt="">
+
+        <div class="container" id="bgimg">
+            <header class="w3-container w3-center" style="padding:128px 0px" id="home">
+                <h1 id="name" class="w3-jumbo animated fadeInDown">
+                    <b>MATTHEW
+                        <br>
+                    <b id="sub-name" >GRIFFITH</b>
+                        </q>
+                    </b>
+                </h1>
+                <p id="subtitle" class="animated fadeInLeft">Web Designer &amp; Developer</p>
+                <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+                <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+                <button class="w3-button w3-round-large w3-light-grey w3-padding-large w3-margin-top animated zoomIn">
+                    <i class="fa fa-download"></i> Download Resume
+                </button>
+            </header>
+        </div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </span>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <div id="mobile-header" class="w3-row">
+                <div class='square-box'>
+                        <div class='square-content'>
+                                <p id="first-name">MATTHEW</p>
+                                <p id="last-name">GRIFFITH</p>
+                        </div>
+                    </div>
+                    <p id="sub-title">Web Developer &amp; Designer</p>
+                    <div class="scroll-indicator fa fa-chevron-down"></div>
+            </div>
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding animated fadeInUpBig" style="margin:0 -16px">
+                <div class="w3-half">
+
+                    <img class="threed" src="https://i.imgur.com/C4MpmrQ.jpg" style="width:100%">
+                    <img class="threed" src="https://i.imgur.com/3r7ZH3N.jpg" style="width:100%">
+
+
+
+                </div>
+
+                <div class="w3-half animated fadeInUpBig">
+                    <img class="threed" src="https://i.imgur.com/qwXumyh.jpg" style="width:100%">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
+        </div>
+
+
+
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact Me</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p>
+                    <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> San Diego, California</p>
+                <p>
+                    <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> (563) 459-8306</p>
+                <p>
+                    <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> MSGSDesign@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <i class="fa fa-facebook-official w3-hover-opacity">
+                <a href="#"></a>
+            </i>
+            <i class="fa fa-instagram w3-hover-opacity">
+                <a href="#"></a>
+            </i>
+            <i class="fa fa-twitter w3-hover-opacity">
+                <a href="#"></a>
+            </i>
+            <i class="fa fa-linkedin w3-hover-opacity">
+                <a href="#"></a>
+            </i>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

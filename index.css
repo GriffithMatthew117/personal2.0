@@ -1,0 +1,42 @@
+#title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#sub-title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#git {
+    font-size: 36pt;
+    color: #747474;
+    padding-right: 0.2em;
+}
+
+#linked {
+    font-size: 36pt;
+    color: #747474;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#submit {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#find-me {
+    font-family: 'Open Sans', sans-serif;
+}
