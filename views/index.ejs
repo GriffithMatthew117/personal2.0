@@ -48,6 +48,14 @@
         letter-spacing: 3.5px;
     }
 
+    #display-img {
+        max-width: 200%;
+    }
+
+    #img-row {
+        margin-right: auto !important; 
+    }
+
 @media only screen and (max-width: 900px) {
         #mobile-header {
             display: block;
@@ -91,6 +99,10 @@
             color: #ffffff;
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
+        }
+
+        #display-img {
+            max-width: 100%;
         }
 
         /* scroll arrow -----------------------------------------------------------*/
@@ -204,12 +216,6 @@
         min-height: 100%;
     }
 
-    @media only screen and (min-width: 900px) {
-        #portfolio {
-            padding-top: 4em !important;
-        }
-    }
-
     .ring {
         display: block;
         position: absolute;
@@ -281,12 +287,6 @@
 
     <!-- Page Content -->
     <div class="w3-main w3-padding-large" style="margin-left:40%">
-
-        <!-- Menu icon to open sidebar -->
-        <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
-            <i class="fa fa-bars"></i>
-        </span>
-
         <!-- Portfolio Section -->
         <div class="w3-padding-32 w3-content" id="portfolio">
             <div id="mobile-header" class="w3-row">
@@ -301,18 +301,11 @@
             </div>
 
             <!-- Grid for photos -->
-            <div class="w3-row-padding animated fadeInUpBig" style="margin:0 -16px">
+            <div id="img-row" class="w3-row animated fadeInUpBig">
                 <div class="w3-half">
-
-                    <img class="threed" src="https://i.imgur.com/C4MpmrQ.jpg" style="width:100%">
-                    <img class="threed" src="https://i.imgur.com/3r7ZH3N.jpg" style="width:100%">
-
-
-
-                </div>
-
-                <div class="w3-half animated fadeInUpBig">
-                    <img class="threed" src="https://i.imgur.com/qwXumyh.jpg" style="width:100%">
+                    <img id="display-img" class="threed" src="https://i.imgur.com/C4MpmrQ.jpg">
+                    <img id="display-img" class="threed" src="https://i.imgur.com/3r7ZH3N.jpg">
+                    <img id="display-img" class="threed" src="https://i.imgur.com/qwXumyh.jpg">
                 </div>
                 <!-- End photo grid -->
             </div>
